@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clipboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="width: 100vw; height: 100vh;">
+    <header class="mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand display-5" href="#">Clipboard</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="card" style="width: 70%; height: 50%; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Copy Me</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Type domething and then copy it..." id="copyItem">
+                </div>
+                <button class="btn btn-primary mb-3" onclick="copyToClipboard()">Copy</button>
+                <p style="display: none;" class="alert alert-success" id="alertCopy" role="alert"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
